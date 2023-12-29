@@ -1,0 +1,170 @@
+/* ***************************** */
+/****Basic Setup******* */
+/* ***************************** */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--off-white);
+  font-family: "Jost", sans-serif;
+  background-color: var(--black);
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6rem;
+  height: 9rem;
+  font-size: 1.125rem;
+}
+nav a {
+  font-size: 2.2rem;
+}
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* ***************************** */
+/****Header****** */
+/* ***************************** */
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    url(./pexels-tobias-bjørkli-1559402.jpg);
+  background-size: cover;
+  background-position: center;
+}
+header .row {
+  width: 100%;
+}
+.header-text-container {
+  height: calc(100% - 9rem);
+  display: flex;
+  align-items: center;
+}
+
+.header-text-container p {
+  font-size: 2.4rem;
+  margin: 1rem 0 3rem;
+}
+.btn {
+  display: inline-block;
+  padding: 1.2rem 4rem;
+  border: 1px solid var(--pink);
+  font-size: 2rem;
+}
+.btn-text {
+  display: inline-block;
+  padding: 1rem 0.6rem;
+  border-bottom: 1px solid var(--pink);
+}
+img {
+  object-fit: contain;
+}
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  color: var(--white);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: var(--gutter-insane);
+  background-color: var(--pink);
+  margin-top: 1rem;
+}
+
+section {
+  padding: var(--gutter-huge) 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+:root {
+  --pink: #ff3258;
+  --white: #ffff;
+  --black: #010101;
+  --off-white: #ffffffc6;
+
+  --nav-height: 8rem;
+  --fs-h1: 7.5rem;
+  --fs-h2: 6rem;
+  --fs-h3: 4rem;
+
+  --gutter-xx-small: 2rem;
+  --gutter-x-small: 3rem;
+  --gutter-small: 4rem;
+  --gutter-medium: 6rem;
+  --gutter-large: 8rem;
+  --gutter-huge: 10rem;
+  --gutter-insane: 18rem;
+}
+/* ***************************** */
+/****My-Work****** */
+/* ***************************** */
+
+.work-box {
+  display: flex;
+  gap: var(--gutter-large);
+  align-items: center;
+  margin-top: var(--gutter-x-small);
+}
+.work-box-img {
+  max-width: 726px;
+}
+.work-box-img img {
+  max-width: 100%;
+}
+.gh-link {
+  height: var(--gutter-x-small);
+}
+.work-box-text {
+  margin-top: var(--gutter-xx-small);
+}
+ul {
+  margin-top: var(--gutter-xx-small);
+  list-style: inside;
+}
+.work-box-link {
+  display: flex;
+  align-items: center;
+  gap: var(--gutter-x-small);
+}
+.gh-link img {
+  height: 3rem;
+}
+.gh-link {
+  transition: all 0.2s;
+}
+.gh-link:hover,
+.gh-link-focus {
+  transform: scale(1.5);
+}
